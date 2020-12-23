@@ -18,10 +18,11 @@ class Game{
     doMagic (player_symbol) {
         var player_symbol = player_symbol;
         var oponent_symbol = this.generateNumber();
+        var whoWin = this.whoWin(player_symbol, oponent_symbol);
         
-        this.state.innerHTML = this.whoWin(player_symbol, oponent_symbol);
+        this.state.innerHTML = whoWin;
         this.state.removeAttribute('class');
-        this.state.classList.add(`${this.whoWin(player_symbol, oponent_symbol)}`);
+        this.state.classList.add(`${whoWin}`);
         this.score.innerHTML = `${this.player_score}:${this.oponent_score}`;
         this.player_symbol.innerHTML    = `<img src="../img/${player_symbol}.svg" alt="player symbol" class="img_symbol">`;
         this.oponent_symbol.innerHTML   = `<img src="../img/${oponent_symbol}.svg" alt="oponent symbol" class="img_symbol">`;
