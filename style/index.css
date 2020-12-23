@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gameBoard{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img_section{
+  background: #ffffff54;
+  border-radius: 5px;
+}
+
+.img_section,
+.scoreInfo{
+  width: 350px;
+  max-width: 90%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_symbol{
+  width: 300px;
+  height: 300px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#state{
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+#score{
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
+.img_symbol{
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.buttons_section{
+  width: 50%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons_section .symbol{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 2rem 1rem;
+  border: 3px solid black;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.button_symbol{
+  width: 40px;
+  max-width: 100%;
+}
+
+.LOSE{
+  color: #ff8686;
+}
+
+.WIN{
+  color: #43AA8B;
+}
+
+.TIES{
+  color: #F9C74F;
+}
